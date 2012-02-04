@@ -1,0 +1,4 @@
+Checkfiles vergleicht alle Dateien ab einem bestimmten Pfad mit Dateien aus einer Referenzdatei. 
+
+Die Referenzdatei kann nur neu angelegt werden, wenn sie noch nicht existiert.
+Dies soll ein versehentliches Ueberschreiben der Datei verhindern.
