@@ -1,4 +1,34 @@
-Checkfiles vergleicht alle Dateien ab einem bestimmten Pfad mit Dateien aus einer Referenzdatei. 
 
-Die Referenzdatei kann nur neu angelegt werden, wenn sie noch nicht existiert.
-Dies soll ein versehentliches Ueberschreiben der Datei verhindern.
+Dies ist kein Addon sondern lediglich eine kleine Hilfe zur Redaxoinstallation.
+Damit lassen sich Dateien auf Vorhandensein prüfen.
+
+
+Beim übertragen von Dateien per FTP kann es passieren, dass nicht alle Dateien
+korrekt übertragen werden. Dies festzustellen ist bei einem Dateiumfang wie
+ihn Redaxo mitbringt fast unmöglich. Mit Hilfe dieses kleinen Scriptes kann 
+aber anhand einer Referenzdatei zumindest das Vorhandensein der Dateien 
+geprüft werden.
+Verglichen wird aber nur der Dateiname, nicht die Größe oder der Inhalt!
+
+
+Benötigt wird
+==========
+
+Das Prüfscript selbst (checkfiles.php) und die zur Redaxoversion passende 
+Referenzdatei (z.B. checkfiles_4.3.3.zip).
+Siehe: http://www.redaxo.org/de/download/addons/?addon_id=433
+
+
+Anwendung
+=========
+
+Alle Redaxodateien per FTP übertragen.
+Dann die Datei checkfiles.php und die Referenzdatei checkfiles.txt (aus dem 
+entsprechenden Referenzpaket) in das Startverzeichnis von Redaxo übertragen.
+Dann im Browser http://deineDomain.tld/checkfiles.php aufrufen und die 
+Prüfung starten.
+Sollten fehlende Dateien gefunden werden, werden die Dateinamen angezeigt. 
+Die Prüfung kann beliebig oft wiederholt werden.
+
+Die zwei zusätzlichen Dateien sollten nach erfolgter Überprüfung wieder entfernt werden.
+
